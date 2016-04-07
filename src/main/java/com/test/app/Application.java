@@ -12,16 +12,16 @@ import org.springframework.context.annotation.Import;
 @EnableAutoConfiguration
 @ComponentScan({"com.test.controller"})
 @Import(CXFApplication.class)
-public class SimpleBootCxfApplication extends SpringBootServletInitializer{
+public class Application extends SpringBootServletInitializer{
 	
 	public static void main(String[] args) {
-		SpringApplication.run(SimpleBootCxfApplication.class, args);
+		SpringApplication.run(Application.class, args);
 		
 	}
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SimpleBootCxfApplication.class);
+		return application.sources(Application.class);
 	}
 
 }

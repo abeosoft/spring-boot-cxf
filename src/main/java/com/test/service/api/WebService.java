@@ -1,7 +1,7 @@
 package com.test.service.api;
 
-import java.util.Map;
+import javax.ws.rs.core.Response;
 
 public interface WebService {
-	Map<String, String> test(String text);
+	Response test(String text);
 }
